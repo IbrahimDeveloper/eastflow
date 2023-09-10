@@ -61,7 +61,7 @@
 .content-txt{
   width:400px;
   height:150px;
-  //float:left;
+  float:right;
   position:relative;
   top:300px;
   -webkit-animation:content-s 7.5s infinite;
