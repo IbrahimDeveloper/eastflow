@@ -44,7 +44,7 @@ input:checked + label{
 
 input + label::after{
   content: '';
-  background-image: url("s1.jpg");
+
   background-repeat: no-repeat;
   background-position: center 55%;
   background-size: 100% 100%;
@@ -75,7 +75,7 @@ input:checked + label + .slide ~ input + label::after {
 }
 
 input:checked + label + .slide + input + label::after {
-  background-image: url("s2.jpg");
+  
   display: block;
   width: 100%;
   right: 0;
