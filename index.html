@@ -37,7 +37,7 @@
     
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="slider-def.css">
+    <link rel="stylesheet" href="style/slider-def.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -75,7 +75,7 @@
                             <div class="logo-container">
                                 <div class="logo-wrap local-scroll">
                                   <a href="#home">
-                                    <img class="" src="eastflow.png" alt="logo" data-rjs="2">
+                                    <img class="logo" src="C:\Users\abdi5\Downloads\N. Agency Free Website Template - Free-CSS.com\nagency_v1.0\documentation\img\logoeastflow.png" alt="logo" data-rjs="2">
                                   </a>
                                 </div>
                             </div>
@@ -108,89 +108,13 @@ digita
 
     
     <!-- Start Intro -->
-   
+    <section id="slider">
 
 
 
- <div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="1"></li>
-            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-			
-                <div class="container">
-                    <div class="row p-5">
-                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="./assets/img/camle-sitting.png" alt="">
-                        </div>
-                        <div class="col-lg-6 mb-0 d-flex align-items-center">
-                            <div class="text-align-left align-self-center">
-                                <h1 class="h1 text-success"><b>Ahmed</b> Opplæring</h1>                              
-                                <h3 class="h2">Lorem ipsum dolor sit amet</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-									Fusce libero sapien, molestie a elementum ac, commodo eget sapien. Phasellus ac nibh posuere.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-				
-            </div>
-            <div class="carousel-item">
-			
-                <div class="container">
-                    <div class="row p-5">
-                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="./assets/img/camel-cabel.png" alt="">
-                        </div>
-                        <div class="col-lg-6 mb-0 d-flex align-items-center">
-                            <div class="text-align-left">
-                                <h1 class="h1">Lorem Ipsum</h1>
-                                <h3 class="h2">Lorem ipsum dolor sit amet</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-									Fusce libero sapien, molestie a elementum ac, commodo eget sapien. Phasellus ac nibh posuere.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-				
-            </div>
-            <div class="carousel-item">
-			
-                <div class="container">
-                    <div class="row p-5">
-                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="./assets/img/camel.png" alt="">
-                        </div>
-                        <div class="col-lg-6 mb-0 d-flex align-items-center">
-                            <div class="text-align-left">
-                                <h1 class="h1">Lorem Ipsum</h1>
-                                <h3 class="h2">Lorem ipsum dolor sit amet</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-									Fusce libero sapien, molestie a elementum ac, commodo eget sapien. Phasellus ac nibh posuere.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-				
-            </div>
-        </div>
-        <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="prev">
-            <i class="fas fa-chevron-left"></i>
-        </a>
-        <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="next">
-            <i class="fas fa-chevron-right"></i>
-        </a>
-    </div>
-    <!-- End Banner Hero -->
+
+
+
 
 
 
@@ -211,7 +135,7 @@ digita
 	    
 	    <!--
         <div class="rev_slider_wrapper fullscreen-container" data-alias="agency-website" id="rev_slider_280_1_wrapper" style="background-color:#fff;padding:0px;height:1080px;">
-          <!-- START REVOLUTION SLIDER 5.1.4 fullscreen mode 
+          <!-- START REVOLUTION SLIDER 5.1.4 fullscreen mode -->
           <div class="rev_slider fullscreenbanner" id="rev_slider_nagency" style="display:none;">
               <ul style="display:none;">
 
@@ -445,7 +369,7 @@ digita
 
 
 	  -->  
-    </div>
+    </section>
     <!-- End Intro -->
 
 
@@ -1493,78 +1417,6 @@ digita
           }
       }); /*ready*/
   </script>
-    <script>
-	    //Image Slider Container
-const imageSlider = document.querySelector(".image-slider");
-
-//sliderImages
-const sliderImages = document.querySelectorAll(".slide");
-
-//SLider controls 
-const next = document.querySelector("#nextControl");
-const prev = document.querySelector("#prevControl");
-
-// Slider Indicators
-const sliderIndicators = document.querySelectorAll(".indicator");
-
-
-let currSlide = 0
-
-//make first indicator active
-sliderIndicators[currSlide].classList.add("active-indicator");
-
-
-//manuel slide controllers
-next.addEventListener("click",()=>{
-  setIndicatorInActive();
-  if(currSlide > sliderImages.length-2){
-    currSlide = 0;
-  }else{
-    currSlide++;
-  }
-  
-   imageSlider.style.transition = "all 1s ease";
-  imageSlider.style.transform = "translateX("+ (-100*currSlide) +"%)";
-  setIndicatorActive();
-});
-
-prev.addEventListener("click",()=>{
-  setIndicatorInActive();
-  if(currSlide < 1){
-    currSlide = 3;
-  }else{
-    currSlide--;
-  }
-  
-  imageSlider.style.transition = "all 1s ease";
-  imageSlider.style.transform = "translateX("+ (-100*currSlide) +"%)";
-  setIndicatorActive();
-});
-
-
-
-
-//automatic slider controls
-setInterval(()=>{
-  //changing Slide after 5 sec
-setIndicatorInActive();   
-  if(currSlide > sliderImages.length-2){
-    currSlide = 0;
-  }else{
-    currSlide++;
-  }
-  imageSlider.style.transition = "all 1s ease";
-  imageSlider.style.transform = "translateX("+ (-100*currSlide) +"%)";
-  setIndicatorActive();
-},5000);
-
-
-//functions to make indicator active and inactive
-const setIndicatorActive = () =>{
-sliderIndicators[currSlide].classList.add("active-indicator");
-}
-const setIndicatorInActive = () =>{   sliderIndicators[currSlide].classList.remove("active-indicator");
-}
-    </script>
+    
   </body>
 </html>
