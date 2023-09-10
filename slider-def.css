@@ -13,9 +13,11 @@
   width:400%;
   height:100%;
   position:relative;
+  /*
   -webkit-animation:slide 30s infinite;
   -moz-animation:slide 30s infinite;
   animation:slide 30s infinite;
+  */
 }
 .slider{
   width:25%;
@@ -64,9 +66,11 @@
   float:right;
   position:relative;
   top:300px;
+  /*
   -webkit-animation:content-s 7.5s infinite;
   -moz-animation:content-s 7.5s infinite;
   animation:content-s 7.5s infinite;
+  */
 }
 .content-txt h1{
   font-family:Arial;
@@ -117,9 +121,11 @@
   border-radius:50%;
   background:#f39c12;
   position:relative;
+  */
   -webkit-animation:on 30s infinite;
   -moz-animation:on 30s infinite;
   animation:on 30s infinite;
+  */
 }
 
 /* Animation */
