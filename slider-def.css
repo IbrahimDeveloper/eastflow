@@ -96,10 +96,10 @@ input:focus + label{
   left: 0;
   z-index: -1;
  
-  transition-duration: .4s;
+  
   opacity: 1;
 }
-
+/*
 input:checked ~ .slide {
   transform: translateX(100%);
 }
@@ -108,7 +108,7 @@ input:checked + label + .slide {
   transform: translateX(0);
   opacity: 1;
 }
-
+*/
 .bg1{
   background-image: url(s1.jpg);
 }
